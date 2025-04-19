@@ -1,6 +1,6 @@
-
-import './App.css'
-import Home from './screens/Home'
+import React from 'react';
+import './App.css';
+import Home from './screens/Home';
 import {
   BrowserRouter as Router,
   Routes,
@@ -20,11 +20,9 @@ function App() {
           <Route exact path ="/" element={<Home/>}/>
           <Route exact path = "/login" element={<Login/>}/>
           <Route exact path = "/createuser" element={<Signup/>}/>
-          
         </Routes>
       </div>
     </Router>
-    
   );
 }
 

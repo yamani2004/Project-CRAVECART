@@ -4,7 +4,7 @@ export default function Card(props) {
   let options = props.options;
   let priceOptions = Object.keys(options)
   const handleAddToCart = ()=>{
-    
+
   }
 
   return (
@@ -23,22 +23,22 @@ export default function Card(props) {
             )
           })}
         </select>
-  
+
         <select className= 'm-2 h-100 bg-success rounded'>
           {priceOptions.map((data)=>{
             return <option key = {data} value = {data}>{data}</option>
           })}
         </select>
-        
+
         <div className='d-inline h-100 fs-5'>
           TotalPrice
         </div>
-  
+
       </div>
       <hr>
       </hr>
       <button className={'btn btn-success justify-center ms-2'} onClick={handleAddToCart}>Add to Cart</button>
-      
+
     </div>
   </div></div></div>
     </div>
